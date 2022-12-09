@@ -63,7 +63,7 @@ const NavBar = () => {
         <nav className={classes.drawer}>
           {isMobile ? (
             <Drawer
-              variant="temporart"
+              variant="temporary"
               anchor="right"
               open={mobileOpen}
               onClose={() => setMobileOpen((prevMobileOpen) => !prevMobileOpen)}
