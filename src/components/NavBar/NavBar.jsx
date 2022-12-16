@@ -93,8 +93,8 @@ const NavBar = () => {
               anchor="right"
               open={mobileOpen}
               onClose={() => setMobileOpen((prevMobileOpen) => !prevMobileOpen)}
-              classes={{ papaer: classes.drawerPaper }}
-              ModelProps={{ keepMounted: true }}
+              classes={{ paper: classes.drawerPaper }}
+              ModalProps={{ keepMounted: true }}
             >
               <Sidebar setMobileOpen={setMobileOpen} />
             </Drawer>

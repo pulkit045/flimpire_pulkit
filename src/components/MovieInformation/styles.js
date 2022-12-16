@@ -12,12 +12,15 @@ export default makeStyles((theme) => ({
   },
   poster: {
     borderRadius: '20px',
-    boxShadow: '0.5em 1em 1em rgb(64,64,70)',
+    boxShadow: '0.5em 1em 1em rgb(64, 64, 70)',
     width: '80%',
+    [theme.breakpoints.up('lg')]: {
+      height: '500px',
+    },
     [theme.breakpoints.down('md')]: {
       margin: '0 auto',
       width: '50%',
-      height: '350px',
+      // height: '350px',
     },
     [theme.breakpoints.down('sm')]: {
       margin: '0 auto',
@@ -32,15 +35,15 @@ export default makeStyles((theme) => ({
     justifyContent: 'space-around',
     flexWrap: 'wrap',
   },
-  genreImages: {
+  genreImage: {
     filter: theme.palette.mode === 'dark' && 'invert(1)',
     marginRight: '10px',
   },
   links: {
     display: 'flex',
     justifyContent: 'center',
-    textDecoration: 'none',
     alignItems: 'center',
+    textDecoration: 'none',
     [theme.breakpoints.down('sm')]: {
       padding: '0.5rem 1rem',
     },
